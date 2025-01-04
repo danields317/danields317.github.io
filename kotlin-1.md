@@ -1,4 +1,5 @@
 # Kotlin Programming Fundamentals
+This document contains a summary of Kotlin Fundamentals I have learned.
 ## Hello World
 The `main()` function is the entrypoint for a Kotlin application.
 ```kotlin
