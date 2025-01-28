@@ -158,3 +158,6 @@ inventory@ for(car in cars) {
 	}
 }
 ```
+
+---
+[Next Chapter](functional.md)
