@@ -80,3 +80,6 @@ Logging in Kotlin is usually done with the following open source package [Kotlin
 - `warn()` for potential issues and unexpected situations that do not cause immediate problems to the application.
 - `error()` for issues or failures that prevent desired execution of the application.
 An application can be run on different log levels, depending on the specified level a subset of the logs will be printed.
+
+---
+[Power Tools](tools.md)

@@ -12,3 +12,4 @@ The Kotlin programming language is full of features. Underneath all my notes on 
 4. [Functional Programming](kotlin/basics/functional.md)
 5. [Advanced Object Oriented Programming](kotlin/basics/aoop.md)
 6. [Exception Handling](kotlin/basics/exceptions.md)
+7. [Power Tools](kotlin/basics/tools.md)
