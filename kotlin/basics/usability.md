@@ -67,7 +67,7 @@ fun main() {
 }
 ```
 
-> [!NOTE] Enumeration theory
+> [!NOTE]
 > Each `enum` value is one of the potential instances of an `enum` class. Anything not specified as a value in the class cannot be an instance of the class. This allows an `enum` to only have a fixed amount of implementations.
 > Trying to directly create an instance of `Direction` is not allowed. One of the specified possible instances must be picked.
 > ```kotlin
