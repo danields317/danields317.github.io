@@ -98,7 +98,7 @@ val result = (1..10).asSequence()
     .first() // Returns 4 and stops since first() is satisfied with 1 item
 ```
 
-> [!NOTE] Horizontal and Vertical Evaluation
+> [!NOTE]
 > Eager Evaluation, which is used in lists, maps, etc. is also named Horizontal Evaluation. This is because each operation is performed on the entire list before going to the next operation in the chain. 
 > Lazy Evaluation is also called Vertical Evaluation. This is because each value in the collection goes through the chain of operators first all the way until the terminal statement. If the terminal statement is satisfied with the currently processed items, the rest of the items don't have to be processed anymore.
 
