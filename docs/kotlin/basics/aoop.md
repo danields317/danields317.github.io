@@ -59,6 +59,7 @@ class WithSecondary(i: Int) {
 	constructor(c: Int, d, Int) : this(c + d) { 
 		trace("Secondary: '$c'") 
 	}
+}
 ```
 
 ## Inheritance
@@ -262,6 +263,3 @@ class House() {
 val house = House()
 house.plus()
 ```
-
----
-[Next Chapter](exceptions.md)
