@@ -1,4 +1,4 @@
-# Kotlin Advanced Object Oriented Programming
+# Advanced Object Oriented
 This document contains a summary of advanced Object Oriented Programming features and concepts in Kotlin.
 
 ## Interfaces

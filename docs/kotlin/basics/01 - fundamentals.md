@@ -1,4 +1,4 @@
-# Kotlin Programming Fundamentals
+# Fundamentals
 This document contains a summary of basic programming fundamentals in Kotlin.
 ## Hello World
 The `main()` function is the entrypoint for a Kotlin application.
@@ -108,6 +108,3 @@ val res2 = 35 >= 1 && 35 <= 100
 Expressions and statements are both components of a program, but they have different meanings.
 Statements change state, these are elements like For and While loops. Their job is to put the application in a certain state. A for loop loads an element to handle in the loop and a while loop manages if the loop keeps executing or it continues.
 Expressions produce a value. Every function is an expression even when they only return `unit`. `if` statements are also expressions in Kotlin, when assigning them to a a variable the statement gets executed and the result is stored.
-
----
-[Next Chapter](oop.md)

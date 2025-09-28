@@ -1,4 +1,4 @@
-# Kotlin coroutine basics
+# Basics
 This document contains a summary of the basic aspects of coroutines in Kotlin.
 
 ## The coroutine
@@ -75,6 +75,3 @@ println("Hello")
 job.join() // wait until child coroutine completes
 println("Done") 
 ```
-
----
-[Next Chapter](cancellation)

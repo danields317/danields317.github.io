@@ -1,4 +1,4 @@
-# Kotlin Usability Features
+# Usability Features
 This document contains a summary of multiple handy features Kotlin offers to make writing code easier.
 
 ## Extension functions
@@ -158,6 +158,3 @@ inventory@ for(car in cars) {
 	}
 }
 ```
-
----
-[Next Chapter](functional.md)
