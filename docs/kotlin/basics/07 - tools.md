@@ -56,7 +56,7 @@ Polymorphic features like interfaces and inheritance are powerful but sometimes 
 
 The `Any` class is the root of all Kotlin classes. A function that takes a parameter of type `Any` can take anything. Any only has three functions available `equals` , `hashCode` and `toString` so the usage of an object that is handled as an `Any` type is limited.
 
-The [Kotlin Usability Features](usability.md) chapter already covers how to define generic parameter in classes and functions. Here some common generic usages are described.
+The previous chapter already covers how to define generic parameter in classes and functions. Here some common generic usages are described.
 Since a class or function cannot know what type of object they will be dealing with when defining generics, not much functionality can be created. Because of this, generics are mostly used for storage and retrieval. Although, storing and retrieving could also be done with `Any`, using generics offers two key benefits.
 1. Generics 'lock in' the datatype of the generic after initialisation. So a few more issues can be caught during compile time with hard coded generics. 
 2. Generics store the datatype of the inserted class, so the data can be returned as the initial datatype. Unlike with `Any` where the datatype will be 'lost' (it is still possible to downcast the `Any` back to its original type).
