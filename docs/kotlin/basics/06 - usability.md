@@ -67,13 +67,16 @@ fun main() {
 }
 ```
 
-> [!NOTE]
-> Each `enum` value is one of the potential instances of an `enum` class. Anything not specified as a value in the class cannot be an instance of the class. This allows an `enum` to only have a fixed amount of implementations.
-> Trying to directly create an instance of `Direction` is not allowed. One of the specified possible instances must be picked.
-> ```kotlin
-> val illegal = Direction("Stormy")
-> val anEnum = Direction.NORTH
-> ```
+:::note
+
+Each `enum` value is one of the potential instances of an `enum` class. Anything not specified as a value in the class cannot be an instance of the class. This allows an `enum` to only have a fixed amount of implementations.
+Trying to directly create an instance of `Direction` is not allowed. One of the specified possible instances must be picked.
+```kotlin
+val illegal = Direction("Stormy")
+val anEnum = Direction.NORTH
+```
+
+:::
 
 ## Data Classes
 Kotlin offers data classes for easier creation of classes that serve as data holders and nothing more. Data classes offer some handy features to work with data like `copy()` to duplicate the class and `hash` functions so the classes can work as `hashMap` keys.

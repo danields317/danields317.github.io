@@ -1,7 +1,3 @@
----
-sidebar_position: 2
----
-
 # Object Oriented
 This document contains a summary of Object Oriented Programming fundamentals in Kotlin.
 
@@ -40,9 +36,11 @@ creature.noise
 creature.name
 ```
 
-> [!tip] Printing Objects
-> When trying to `println` an object, its `toString()` method is called. This by default returns the name + address of the object. Override the `toString()` method to print custom textual information about the object!
+:::tip[Printing Objects]
 
+When trying to `println` an object, its `toString()` method is called. This by default returns the name + address of the object. Override the `toString()` method to print custom textual information about the object!
+
+:::
 
 ## Visibility Modifiers
 Kotlin has 4 visibility modifiers.
