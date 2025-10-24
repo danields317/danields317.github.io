@@ -130,7 +130,7 @@ const config: Config = {
           ],
         },
       ],
-      copyright: `Definelty no Copyright © ${new Date().getFullYear()} going on here. | Built with Docusaurus. | Thank you Docusaurs, I love you.`,
+      copyright: 'Thanks for checking my website!',
     },
     prism: {
       theme: prismThemes.github,
