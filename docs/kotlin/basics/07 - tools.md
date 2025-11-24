@@ -110,7 +110,8 @@ nameOf(Compost("Thing"))
 This functionality looks an awful lot like like regular polymorphism. The key difference however, is the fact that the generic will store the datatype of the class that was used. In polymorphism, the class will be upcasted to the base class (just like using `Any`).
 
 ### Type Erasure
-Due to interoperability with Java and reducing memory usage, the type of a generic is erased after compilation. This has an impact when handling collections of data. For example, a list is generic. A list can be created for any type of data. If the datatype was stored, a check like `list is List<String>` could be done. But this data is erased. Only the individual elements in a list can be type checked.
+Due to interoperability with Java and reducing memory usage, the type of a generic is erased after compilation. This makes it impossible to check the type of a generic during execution. 
+This has an impact when handling collections of data. For example, a list is generic. A list can be created for any type of data. If the datatype was stored, a check like `list is List<String>` could be done. But this data is erased. Only the individual elements in a list can be type checked.
 
 ### Reification of arguments
 When calling a generic function, the datatype won't be available inside of the function. There might be situations where the datatype is required inside of the method. Kotlin offers the `reified` keyword for this. A function that uses `reified` should also be `inline`.
