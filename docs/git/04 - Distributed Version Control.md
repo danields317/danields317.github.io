@@ -1,6 +1,9 @@
 # Distributed Version Control
+
 Until now, all documentation is about how Git operates on one machine. The real power of Git is being able to share code easily. This is done through Git's distribution features.
+
 ## Origin
+
 When cloning a remote repository, the entire .git database is copied.
 When cloning a repository, .git/config file will add information about the remote repository. This information is labelled with the name origin.
 
