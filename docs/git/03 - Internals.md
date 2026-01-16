@@ -12,7 +12,7 @@ Files are named by hashing (SHA-1) the information (and header) that the object 
 
 Blobs are the objects for storing files. A blob holds the file data hashed through SHA-1. Because the name of the object file is created by hashing the content, the name of the file is lost in a blob. These names are stored in tree objects.
 
-```
+```git
 $ git cat-file -p d670460b4b4aece5915caf5c68d12f560a9fe3e4
 test content
 ```
@@ -21,7 +21,7 @@ test content
 
 Tree objects are used to represent folders. A tree object hold the hashes of the files and other trees in the current tree object. The tree also holds the names of the files and folders of the objects.
 
-```
+```git
 $ git cat-file -p 99f1a6d12cb4b6f19c8655fca46c3ecf317074e0
 100644 blob a906cb2a4a904a152e80877d4088654daad0c859 README
 100644 blob 8f94139338f9404f26296befa88755fc2598c289 Rakefile
@@ -32,7 +32,7 @@ $ git cat-file -p 99f1a6d12cb4b6f19c8655fca46c3ecf317074e0
 
 A commit object holds a reference to a tree object. This tree is the source of the project. This results in a commit having a reference to the entire state of a project.
 
-```
+```git
 $ git cat-file -p fdf4fc3
 tree d8329fc1cc938780ffdd9f94e0d364e0ea74f579
 author Scott Chacon <schacon@gmail.com> 1243040974 -0700
