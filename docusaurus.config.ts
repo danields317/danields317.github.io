@@ -101,10 +101,10 @@ const config: Config = {
         {
           title: 'Docs',
           items: [
-            {
-              label: 'Kotlin',
-              to: '/docs/kotlin',
-            },
+            // {
+            //   label: 'Kotlin',
+            //   to: '/docs/kotlin',
+            // },
           ],
         },
         {
