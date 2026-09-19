@@ -29,6 +29,7 @@
   --dialog-gray: #808080;
   --dialog-gray-light: #b5b5b5;
   --link-blue: #0000ff;
+  --background: #008080;
 
   /* 98 Spacing */
   --element-spacing: 8px;
@@ -112,6 +113,7 @@
     var(--dialog-blue-light)
   );
   padding: 3px 2px 3px 3px;
+  height: fit-content;
 }
 
 .theme-layout-navbar a {
@@ -121,13 +123,25 @@
   box-shadow: inset -1px -1px var(--window-frame),inset 1px 1px var(--button-highlight),inset -2px -2px var(--dialog-gray),inset 2px 2px var(--button-face);
   box-sizing: border-box;
   color: transparent;
-  min-height: 23px;
-  min-width: 75px;
-  padding: 0 12px;
+  height: 100%;
   text-shadow: 0 0 #222;
 }
 
+.theme-layout-navbar a:active {
+  box-shadow: var(--border-sunken-outer), var(--border-sunken-inner);
+  text-shadow: 1px 1px var(--text-color);
+}
+
+.theme-layout-navbar a:hover {
+  box-shadow: var(--border-sunken-outer), var(--border-sunken-inner);
+}
+
+.theme-layout-navbar a:focus {
+  outline: 1px dotted #000000;
+  outline-offset: -4px;
+}
+
 .theme-layout-main {
-  background-color: var(--surface);
+  background-color: var(--background);
 }
 
