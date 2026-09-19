@@ -44,7 +44,7 @@ const config: Config = {
         docs: {
           sidebarPath: './sidebars.ts',
           // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
+          // Remove this to remove the "edit this page" links.f
           // editUrl: 'https://github.com/danields317/danields317.github.io',
         },
         blog: {
@@ -78,7 +78,7 @@ const config: Config = {
       title: 'My compendium',
       logo: {
         alt: 'My Site Logo',
-        src: 'img/logo.svg',
+        src: 'img/clueless.png',
       },
       items: [
         {
@@ -98,39 +98,35 @@ const config: Config = {
     footer: {
       style: 'dark',
       links: [
-        {
-          title: 'Docs',
-          items: [
-            // {
-            //   label: 'Kotlin',
-            //   to: '/docs/kotlin',
-            // },
-          ],
-        },
-        {
-          title: 'Socials',
-          items: [
-            {
-              label: 'LinkedIn',
-              href: 'https://www.linkedin.com/in/daniel-de-schipper',
-            },
-            {
-              label: 'X',
-              href: 'https://x.com/_Danjel_',
-            },
-          ],
-        },
-        {
-          title: 'More',
-          items: [
-            {
-              label: 'Blog',
-              to: '/blog',
-            }
-          ],
-        },
+      //   {
+      //     title: 'Docs',
+      //     items: [
+      //       // {
+      //       //   label: 'Kotlin',
+      //       //   to: '/docs/kotlin',
+      //       // },
+      //     ],
+      //   },
+      //   {
+      //     title: 'Socials',
+      //     items: [
+      //       // {
+      //       //   label: 'LinkedIn',
+      //       //   href: 'https://www.linkedin.com/in/daniel-de-schipper',
+      //       // }
+      //     ],
+      //   },
+      //   {
+      //     title: 'More',
+      //     items: [
+      //       {
+      //         label: 'Blog',
+      //         to: '/blog',
+      //       }
+      //     ],
+      //   },
       ],
-      copyright: 'Thanks for checking my website!',
+      //copyright: '',
     },
     prism: {
       theme: prismThemes.github,

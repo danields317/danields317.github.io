@@ -1,0 +1,48 @@
+# LSP Setup
+
+This document contains an example setup to get started with LSP in Neovim.
+
+## Installing LSP servers
+
+Use the Mason plugin to install LSP servers and other LSP related tools like Debug Adapters and Linters.
+
+```lua
+{
+            "mason-org/mason.nvim",
+            opts = {}
+}
+```
+
+Use `:Mason` to open the LSP browser.
+Use `:MasonInstall` to install an LSP.
+Use `:MasonUpdate` to update installed LSP servers.
+
+## Enabling LSP servers
+
+The instaleld LSP servers can be adding the following configuration.
+- Adding a `config` entry and giving it a name.
+- Instructing which LSP should be started with `cmd`. The servers can be found in the `nvim-data/mason` folder.
+- Instructing on which filetypes to start the server.
+- Instructing which folder will be the root of the project. The same LSP instance will be used in one projet.
+
+```lua
+vim.lsp.config['lua-language-server'] = {
+    cmd = { 'lua-language-server' },
+    filetypes = { 'lua' },
+    root_markers = { { '.luarc.json', '.luarc.jsonc' }, '.git' }
+}
+
+vim.lsp.config['kotlin-lsp'] = {
+    cmd = { 'kotlin-lsp' },
+    filetypes = { 'kt' },
+    root_markers = { '.git' }
+}
+
+vim.lsp.enable(
+    {
+        'lua-language-server',
+        'kotlin-lsp'
+    }
+)
+
+```
