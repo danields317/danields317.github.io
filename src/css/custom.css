@@ -94,6 +94,17 @@
     inset 2px 2px var(--button-highlight)
 }
 
+@font-face {
+  font-family: "Pixelated MS Sans Serif";
+  src: url('../../static/font/ms_sans_serif.woff') format("woff");
+}
+
+@font-face {
+  font-family: "Pixelated MS Sans Serif";
+  src: url("../../static/font/ms_sans_serif_bold.woff") format("woff");
+  font-weight: bold;
+}
+
 /* For readability concerns, you should choose a lighter palette in dark mode. */
 [data-theme='dark'] {
   --ifm-color-primary: #25c2a0;
@@ -114,10 +125,12 @@
   );
   padding: 3px 2px 3px 3px;
   height: fit-content;
+  font-family: "Pixelated MS Sans Serif";
 }
 
-.theme-layout-navbar a {
-  background: silver;
+.theme-layout-navbar-right > a, button{
+  color: var(--text-color);
+  background: var(--surface);
   border: none;
   border-radius: 0;
   box-shadow: inset -1px -1px var(--window-frame),inset 1px 1px var(--button-highlight),inset -2px -2px var(--dialog-gray),inset 2px 2px var(--button-face);
@@ -125,18 +138,27 @@
   color: transparent;
   height: 100%;
   text-shadow: 0 0 #222;
+  margin: 0 0.1vw 0 0
 }
 
-.theme-layout-navbar a:active {
+.theme-layout-navbar-right > div {
+  height: 100%;
+}
+
+.theme-layout-navbar-right svg{
+    color: var(--text-color);
+}
+
+.theme-layout-navbar-right > a:active, button:active {
   box-shadow: var(--border-sunken-outer), var(--border-sunken-inner);
   text-shadow: 1px 1px var(--text-color);
 }
 
-.theme-layout-navbar a:hover {
+.theme-layout-navbar-right >  a:hover, button:hover {
   box-shadow: var(--border-sunken-outer), var(--border-sunken-inner);
 }
 
-.theme-layout-navbar a:focus {
+.theme-layout-navbar-right > a:focus, button:hover {
   outline: 1px dotted #000000;
   outline-offset: -4px;
 }
