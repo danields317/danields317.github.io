@@ -117,6 +117,7 @@
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
 
+/* Navbar */
 .theme-layout-navbar {
   background: linear-gradient(
     90deg,
@@ -128,7 +129,7 @@
   font-family: "Pixelated MS Sans Serif";
 }
 
-.theme-layout-navbar-right > a, button{
+.theme-layout-navbar-right a, button {
   color: var(--text-color);
   background: var(--surface);
   border: none;
@@ -146,24 +147,50 @@
 }
 
 .theme-layout-navbar-right svg{
-    color: var(--text-color);
+  color: var(--text-color);
 }
 
-.theme-layout-navbar-right > a:active, button:active {
+.theme-layout-navbar-right a:active, button:active {
   box-shadow: var(--border-sunken-outer), var(--border-sunken-inner);
   text-shadow: 1px 1px var(--text-color);
 }
 
-.theme-layout-navbar-right >  a:hover, button:hover {
+.theme-layout-navbar-right a:hover, button:hover {
   box-shadow: var(--border-sunken-outer), var(--border-sunken-inner);
 }
 
-.theme-layout-navbar-right > a:focus, button:hover {
+.theme-layout-navbar-right a:focus, button:hover {
   outline: 1px dotted #000000;
   outline-offset: -4px;
+}
+
+/* Sidebar */
+.theme-doc-sidebar-container{
+  font-family: "Pixelated MS Sans Serif", Arial;
+  background: var(--button-highlight);
+  box-shadow: var(--border-field);
+  padding: 6px;
+  margin: 0;
 }
 
 .theme-layout-main {
   background-color: var(--background);
 }
 
+/* Mobile */
+.theme-layout-navbar-left > button {
+  color: var(--text-color);
+  background: var(--surface);
+  border: none;
+  border-radius: 0;
+  box-shadow: inset -1px -1px var(--window-frame),inset 1px 1px var(--button-highlight),inset -2px -2px var(--dialog-gray),inset 2px 2px var(--button-face);
+  box-sizing: border-box;
+  color: transparent;
+  height: 100%;
+  text-shadow: 0 0 #222;
+  margin: 0 0.1vw 0 0
+}
+
+.theme-layout-navbar-left svg{
+  color: var(--text-color);
+}
