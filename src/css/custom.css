@@ -117,7 +117,7 @@
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
 
-/* Navbar */
+/* Navbar background gradient*/
 .theme-layout-navbar {
   background: linear-gradient(
     90deg,
@@ -129,6 +129,7 @@
   font-family: "Pixelated MS Sans Serif";
 }
 
+/* Button style for items on right  */
 .theme-layout-navbar-right > a {
   color: var(--text-color);
   background: var(--surface);
@@ -142,6 +143,21 @@
   margin: 0 0.1vw 0 0
 }
 
+.theme-layout-navbar-right > a:active {
+  box-shadow: var(--border-sunken-outer), var(--border-sunken-inner);
+  text-shadow: 1px 1px var(--text-color);
+}
+
+.theme-layout-navbar-right > a:hover {
+  box-shadow: var(--border-sunken-outer), var(--border-sunken-inner);
+}
+
+.theme-layout-navbar-right > a:focus {
+  outline: 1px dotted #000000;
+  outline-offset: -4px;
+}
+
+/* Button style for light/dark theme */
 .theme-layout-navbar-right > div > button {
   color: var(--text-color);
   background: var(--surface);
@@ -155,6 +171,21 @@
   margin: 0 0.1vw 0 0
 }
 
+.theme-layout-navbar-right > div > button:active {
+  box-shadow: var(--border-sunken-outer), var(--border-sunken-inner);
+  text-shadow: 1px 1px var(--text-color);
+}
+
+.theme-layout-navbar-right > div > button:hover {
+  box-shadow: var(--border-sunken-outer), var(--border-sunken-inner);
+}
+
+.theme-layout-navbar-right > div > button:focus {
+  outline: 1px dotted #000000;
+  outline-offset: -4px;
+}
+
+/* Button style for scroll to top button */
 .theme-back-to-top-button {
   color: var(--text-color);
   background: var(--surface);
@@ -181,79 +212,65 @@
   outline-offset: -4px;
 }
 
+/* Align button sizes */
 .theme-layout-navbar-right > div {
   height: 100%;
 }
 
+/* Color for SVG's */
 .theme-layout-navbar-right svg{
   color: var(--text-color);
 }
 
-.theme-layout-navbar-right > a:active {
-  box-shadow: var(--border-sunken-outer), var(--border-sunken-inner);
-  text-shadow: 1px 1px var(--text-color);
-}
-
-.theme-layout-navbar-right > div > button:active {
-  box-shadow: var(--border-sunken-outer), var(--border-sunken-inner);
-  text-shadow: 1px 1px var(--text-color);
-}
-
-.theme-layout-navbar-right > a:hover {
-  box-shadow: var(--border-sunken-outer), var(--border-sunken-inner);
-}
-
-.theme-layout-navbar-right > div > button:hover {
-  box-shadow: var(--border-sunken-outer), var(--border-sunken-inner);
-}
-
-.theme-layout-navbar-right > a:focus {
-  outline: 1px dotted #000000;
-  outline-offset: -4px;
-}
-
-.theme-layout-navbar-right > div > button:focus {
-  outline: 1px dotted #000000;
-  outline-offset: -4px;
-}
-
-/* Sidebar */
-.theme-doc-sidebar-container > div> div > nav > ul {
-  list-style-type: none;
-}
-
-.theme-doc-sidebar-container > div > div > nav > ul li {
-  position: relative;
-}
-
-.theme-doc-sidebar-container > div > div > nav > ul li:before {
-
-}
-
-.theme-doc-sidebar-menu {
-  margin: 0;
-  padding: 0;
-}
-
-.theme-doc-sidebar-item-link {
-  margin: 0;
-  padding: 0;
-  width: 97%;
-  border-left: 2px solid black;
-}
-
-.theme-doc-sidebar-item-link::before {
-  content: '';
-  display: block;
-  position: absolute;
-  top: 50%;
-  width: 3%;
-  border-bottom: 2px solid black;
+/* Sidebar unset default in/out arrow */
+.menu__link--sublist-caret::after {
+  all: unset;
 }
 
 /* Main */
 .theme-layout-main {
   background-color: var(--background);
+}
+
+.theme-doc-sidebar-menu ul {
+  margin-top: 0;
+}
+
+.theme-doc-sidebar-item-category > div {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+
+.theme-doc-sidebar-item-category > div > a {
+  padding: 0;
+  margin: 0;
+}
+
+.theme-doc-sidebar-item-category.menu__list-item--collapsed > div::before {
+  margin: 0;
+  padding: 0;
+  content: "\002B";
+  width: 1rem;
+  height: 1rem;
+  border: 1px solid #808080;
+  margin-right: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.theme-doc-sidebar-item-category > div::before {
+  margin: 0;
+  padding: 0;
+  content: "\2212";
+  width: 1rem;
+  height: 1rem;
+  border: 1px solid #808080;
+  margin-right: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /* Mobile */
