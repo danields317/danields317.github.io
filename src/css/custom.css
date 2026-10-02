@@ -345,6 +345,10 @@
   background-color: var(--background);
 }
 
+.theme-layout-footer {
+  background-color: #808080;
+}
+
 .theme-doc-markdown h1,h2,h3,h4,h5 {
   font-family: "Pixelated MS Sans Serif";
 }
@@ -365,4 +369,14 @@
 
 .theme-layout-navbar-left svg{
   color: var(--text-color);
+}
+
+@keyframes move {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(200px);
+  }
 }

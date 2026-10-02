@@ -70,14 +70,14 @@ const config: Config = {
 
   themeConfig: {
     // Replace with your project's social card
-    image: 'img/docusaurus-social-card.jpg',
+    image: 'img/clueless.jpg',
     colorMode: {
       respectPrefersColorScheme: true,
     },
     navbar: {
-      title: 'My compendium',
+      title: 'The Database',
       logo: {
-        alt: 'My Site Logo',
+        alt: 'Clueless',
         src: 'img/clueless.png',
       },
       items: [
@@ -87,10 +87,10 @@ const config: Config = {
           position: 'left',
           label: 'Documentation',
         },
-        {to: '/blog', label: 'Blog posts', position: 'left'},
+        {to: '/blog', label: 'Blog', position: 'left'},
         {
           href: 'https://github.com/danields317',
-          label: 'My GitHub',
+          label: 'GitHub',
           position: 'right',
         },
       ],
