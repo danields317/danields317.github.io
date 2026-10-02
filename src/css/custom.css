@@ -227,31 +227,31 @@
   all: unset;
 }
 
-/* Main */
-.theme-layout-main {
-  background-color: var(--background);
-}
-
+/* Set font */
 .theme-doc-sidebar-menu {
   font-family: "Pixelated MS Sans Serif";
 }
 
+/* Remove margin between categories */
 .theme-doc-sidebar-menu ul {
   margin-top: 0;
-  padding-left: 0.5rem;
 }
 
+/* Remove padding and margin from the category buttons */
 .theme-doc-sidebar-item-category > div {
   padding: 0;
   margin: 0;
   width: 100%;
 }
 
+/* Remove padding and margin from the category anchors */
 .theme-doc-sidebar-item-category > div > a {
   padding: 0;
   margin: 0;
 }
 
+/* Add a boxed in plus sign in front of each category when collapsed
+   Also sets flex to style the sign inside of the border */
 .theme-doc-sidebar-item-category.menu__list-item--collapsed > div > a::before {
   margin: 0;
   padding: 0;
@@ -265,6 +265,8 @@
   justify-content: center;
 }
 
+/* Add a boxed in minus sign in front of each category when not collapsed
+   Also sets flex to style the sign inside of the border */
 .theme-doc-sidebar-item-category > div > a::before {
   margin: 0;
   padding: 0;
@@ -278,12 +280,34 @@
   justify-content: center;
 }
 
+/* Add a line to each expand under a category */
 .theme-doc-sidebar-item-category > ul {
   padding-left: 0;
   margin-left: 0.5rem;
   border-left: 2px dotted #808080;
 }
 
+/* Add flex only to nested categories */
+.theme-doc-sidebar-item-category .theme-doc-sidebar-item-category {
+  padding-left: 0;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.theme-doc-sidebar-item-category .theme-doc-sidebar-item-category > div {
+  width: calc(100% - 0.5rem);
+}
+
+/* Add horizontal line only to nested categories */
+.theme-doc-sidebar-item-category .theme-doc-sidebar-item-category::before {
+  content: "";
+  display: inline-block;
+  width: 0.5rem;
+  border-top: 2px dotted #808080;
+}
+
+/* Set flex to the links to set the line and link next to each other */
 .theme-doc-sidebar-item-link {
   margin-top: 0;
   display: flex;
@@ -291,6 +315,7 @@
   align-items: center;
 }
 
+/* Add horizontal line to the links */
 .theme-doc-sidebar-item-link::before {
   content: "";
   width: 1rem;
@@ -301,6 +326,11 @@
 .theme-doc-sidebar-item-link > a {
   padding: 0;
   margin: 0;
+}
+
+/* Main */
+.theme-layout-main {
+  background-color: var(--background);
 }
 
 /* Mobile */
