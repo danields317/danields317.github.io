@@ -6,6 +6,8 @@
 
 /* You can override the default Infima variables here. */
 :root {
+  scrollbar-color: #808080 var(--background);
+  scrollbar-width: auto;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 1rem;
   --ifm-color-primary: #2e8555;
@@ -227,6 +229,10 @@
   all: unset;
 }
 
+.thin-scrollbar {
+  scrollbar-width: none;
+}
+
 /* Set font */
 .theme-doc-sidebar-menu {
   font-family: "Pixelated MS Sans Serif";
@@ -295,6 +301,8 @@
   flex-wrap: wrap;
 }
 
+/* Make the size of the category exactly small enough so the line fits next to it
+   When unfolding the links and subcategories still go to a new line below */
 .theme-doc-sidebar-item-category .theme-doc-sidebar-item-category > div {
   width: calc(100% - 0.5rem);
 }
@@ -328,9 +336,17 @@
   margin: 0;
 }
 
+.theme-doc-breadcrumbs {
+  font-family: "Pixelated MS Sans Serif";
+}
+
 /* Main */
 .theme-layout-main {
   background-color: var(--background);
+}
+
+.theme-doc-markdown h1,h2,h3,h4,h5 {
+  font-family: "Pixelated MS Sans Serif";
 }
 
 /* Mobile */
